@@ -1,0 +1,42 @@
+package com.zwf.core.constant.enums;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
+/**
+ * 描述: 菜单类型
+ *
+ * @author www.zhouwenfang.com
+ * @version 1.0
+ * @date 2022/03/15 22:05:56
+ */
+@Getter
+@AllArgsConstructor
+public enum MenuTypeEnum {
+
+    /**
+     * 左侧菜单
+     */
+    LEFT_MENU("0", "left"),
+
+    /**
+     * 顶部菜单
+     */
+    TOP_MENU("2", "top"),
+
+    /**
+     * 按钮
+     */
+    BUTTON("1", "button");
+
+    /**
+     * 类型
+     */
+    private String type;
+
+    /**
+     * 描述
+     */
+    private String description;
+
+}
