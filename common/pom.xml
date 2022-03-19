@@ -17,6 +17,8 @@
         <module>common-bom</module>
         <module>common-core</module>
         <module>common-swagger</module>
+        <module>common-log</module>
+        <module>common-feign</module>
     </modules>
 
 </project>

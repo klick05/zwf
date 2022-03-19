@@ -2,39 +2,36 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <parent>
         <groupId>com.zwf</groupId>
-        <artifactId>upms</artifactId>
+        <artifactId>common</artifactId>
         <version>1.0.0</version>
     </parent>
 
-    <artifactId>upms-api</artifactId>
+    <artifactId>log</artifactId>
     <packaging>jar</packaging>
-
-    <description>通用用户权限管理系统公共api模块</description>
+    <description>日志服务</description>
 
     <dependencies>
-        <!--core 工具类-->
+        <!--工具类核心包-->
         <dependency>
             <groupId>com.zwf</groupId>
             <artifactId>common-core</artifactId>
         </dependency>
-
-        <!--mybatis plus extension,包含了mybatis plus core-->
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-extension</artifactId>
-        </dependency>
-
-        <!--feign 工具类-->
+        <!--UPMS接口模块-->
         <dependency>
             <groupId>com.zwf</groupId>
-            <artifactId>common-feign</artifactId>
+            <artifactId>upms-api</artifactId>
         </dependency>
-
-        <!-- excel 导入导出 -->
-
+        <!--安全依赖获取上下文信息-->
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security.oauth</groupId>
+            <artifactId>spring-security-oauth2</artifactId>
+        </dependency>
     </dependencies>
 
 </project>

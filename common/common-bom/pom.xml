@@ -49,6 +49,29 @@
                 <artifactId>swagger-annotations</artifactId>
                 <version>${swagger.core.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.zwf</groupId>
+                <artifactId>upms-api</artifactId>
+                <version>${root.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.zwf</groupId>
+                <artifactId>common-feign</artifactId>
+                <version>${root.version}</version>
+            </dependency>
+            <!--稳定版本，替代spring security bom内置-->
+            <dependency>
+                <groupId>org.springframework.security.oauth</groupId>
+                <artifactId>spring-security-oauth2</artifactId>
+                <version>${security.oauth.version}</version>
+            </dependency>
+            <!--mybatis plus extension,包含了mybatis plus core-->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-extension</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
