@@ -1,0 +1,11 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.zwf.security.component.ZwfTokenEnhancer,\
+  com.zwf.security.component.ZwfSecurityInnerAspect,\
+  com.zwf.security.service.ZwfUserDetailsServiceImpl,\
+  com.zwf.security.service.ZwfClientDetailsServiceImpl,\
+  com.zwf.security.component.ZwfTokenStoreAutoConfiguration,\
+  com.zwf.security.component.ZwfTokenStoreCleanSchedule,\
+  com.zwf.security.listener.AuthenticationFailureEventListener,\
+  com.zwf.security.listener.AuthenticationSuccessEventListener,\
+  com.zwf.security.listener.AuthenticationLogoutSuccessEventListener
+
