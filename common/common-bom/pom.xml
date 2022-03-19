@@ -59,6 +59,16 @@
                 <artifactId>common-feign</artifactId>
                 <version>${root.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.zwf</groupId>
+                <artifactId>common-security</artifactId>
+                <version>${root.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.zwf</groupId>
+                <artifactId>common-log</artifactId>
+                <version>${root.version}</version>
+            </dependency>
             <!--稳定版本，替代spring security bom内置-->
             <dependency>
                 <groupId>org.springframework.security.oauth</groupId>
